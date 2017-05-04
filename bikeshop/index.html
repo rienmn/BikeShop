@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>B I K E S H O P</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+  	<header>
+  		<div class="header--top">
+  			<a href="#" class="logo"><img src="img/Logo.png" width="160" height="50" alt="logo"></a>
+  			<nav>
+  				<li><a href="#">BICYCLES</a>
+  				<ul class="droplist">
+  					<li><a href="#">FIXED/SINGLE SPEED</a></li>
+  					<li><a href="#">CITY BIKES</a></li>
+  					<li><a href="#">PREMIUM SERIES</a></li>
+  				</ul>
+  				</li>
+  				<li><a href="#">PARTS</a></li>
+  				<li><a href="#">ACCESORIES</a></li>
+  				<li><a href="#">EXTRAS</a></li>
+  				<li><a href="#" class="basket"><img src="img/Basket.png" width="26" height="26" alt="basket"></a></li>
+  			</nav>
+  		</div>
+  		<div class="header--middle">
+  		<a href="#"><img src="img/LEFTBUTTON.png" width="58" height="58" alt="Back"></a>
+  		<div class="title">
+  			<h1>HANDMADE BICYCLE</h1>
+  			<span>You <b>create</b> the <b>journey,</b> we supply the <b>parts.</b></span>
+  			<a href="#">SHOP BIKES</a>
+  			</div>
+  			<a href="#"><img src="img/RIGHTBUTTON.png" width="58" height="58" alt="Next"></a>
+  		</div>
+  		<img src="img/Scrollactive.png" width="66" height="67" alt="Scroll" class="scroll">
+  	</header>
+  	<section class="categories">
+  		<h2>CATEGORIES</h2>
+  		<div class="items">
+  			<div>
+  				<h2>FIXED/SINGLE SPEED</h2>
+  				<span>Are yo ready for 27.5 revolution?</span>
+  			</div>
+  			<div>
+  				<h2>PREMIUM SERIES</h2>
+  				<span>Exclusive bike components</span>
+  				<a href="#">GO TO STORE</a>
+  			</div>
+  			<div>
+  				<h2>CITY BIKES</h2>
+  				<span>Street Playground</span>
+  			</div>
+  		</div>
+  	</section>
+  	<section class="Popular">
+  		<h2>POPULAR BIKES</h2>
+  		<div class="items">
+  			<figure>
+  				<img src="img/fixed.png" width="437" height="391" alt="bike">
+  				<figcaption>
+  					<span><b>FIXED GEAR</b><br>$249.00</span>
+  					<div>
+  					<select>
+  					<option>OPTION</option>
+  					</select>
+  					<button>BUY</button>
+  					</div>
+  				</figcaption>
+  			</figure>
+  			<figure>
+  				<img src="img/ultra.png" width="452" height="391" alt="bike">
+  				<figcaption>
+  					<span><b>BIG BOY ULTRA</b><br>$249.00</span>
+  					<div>
+  					<select>
+  					<option>OPTION</option>
+  					</select>
+  					<button>BUY</button>
+  					</div>
+  				</figcaption>
+  			</figure>
+  			<figure>
+  				<img src="img/sanchaez.png" width="460" height="391" alt="bike">
+  				<figcaption>
+  					<span><b>SANCHAEZ</b><br>$249.00</span>
+  					<div>
+  					<select>
+  					<option>OPTION</option>
+  					</select>
+  					<button>BUY</button>
+  					</div>
+  				</figcaption>
+  			</figure>
+  		</div>
+  	</section>
+  	<section class="contact">
+  		<h2>CONTACT US</h2>
+  		<span>Please contact us for all inquiries and purchase options</span>
+  		<form method="post" class="data">
+  			<input type="text" name="Name" value="NAME" required>
+  			<input type="text" name="Surname" value="SURNAME">
+  			<input type="text" name="Email" value="USER@DOMAIN.COM" required>
+  			<input type="textarea" name="Textarea" value="MESSAGE">
+  			<input type="date">
+  			<input type="number" class="number">
+  			<input type="number" class="rooms">
+  			<button>SEND</button>
+  		</form>
+  	</section>
+  	<footer>
+  		<img src="img/logoblack.png" width="115" height="36" alt="Logo">
+  	<nav>
+  		<li><a href="#">BICYCLES</a></li>
+  		<li><a href="#">PARTS</a></li>
+  		<li><a href="#">ACCESORIES</a></li>
+  		<li><a href="#">EXTRAS</a></li>
+  	</nav>
+  	</footer>
+   <script>
+  	'use strict';
+  	var form=document.querySelector(".data");
+  	var number=document.querySelector(".number");
+  	number.min=1;
+  	number.max=10;
+  	var rooms=document.querySelector(".rooms");
+  	var MAX_GUESTS=3;
+
+  	function setMinAndMax(rooms,guestsNumber){
+  		rooms.min=Math.ceil(guestsNumber / MAX_GUESTS);
+  		rooms.max=guestsNumber;
+  	}
+
+  	number.value=2;
+  	setMinAndMax(rooms,number.value);
+  	rooms.value=rooms.min;
+  	number.onchange=function(){
+ 		function setMinAndMax(rooms, number.value);	
+ 		}
+       
+
+ 		form.onsubmit=function(evt){
+ 			evt.preventDefault();
+ 			document.cookie='number'+ number.value;
+ 			document.cookie="rooms" + rooms.value;
+
+ 			var dateToExpire=+Date.now()+3*24*60*60*1000;
+ 			var formattedDateToExpire= new Date(dateToExpire).toUTCString();
+ 		}
+  	
+</script>
+  </body>
+  </html>
